@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'firstlook.jihad.assignment_one'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "firstlook.jihad.assignment_one"

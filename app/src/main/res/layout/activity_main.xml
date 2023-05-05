@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/Beige"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="334dp"
+        android:layout_height="204dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:translationY="-150dp"
+        app:srcCompat="@drawable/blue_modern_school_academy_logo" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_margin="10dp"
+        android:dropDownHeight="200dp"
+        android:background="@color/DarkOliveGreen"
+        android:minHeight="48dp"
+        android:dropDownVerticalOffset="40dp"
+        android:spinnerMode="dropdown"
+        android:translationY="-80dp" />
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/ChooseCourseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/main_screen_text"
+        android:textColor="@color/DarkOliveGreen"
+        android:textSize="24dp"
+        android:translationY="-200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
