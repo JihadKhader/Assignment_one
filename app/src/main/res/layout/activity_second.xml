@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Beige"
+    android:padding="24dp"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/total_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Total Questions"
+        android:textColor="@color/DarkOliveGreen"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:text="This will be the questions"
+        android:textColor="@color/DarkOliveGreen"
+        android:textSize="24dp"
+        android:layout_above="@id/choices_layout"/>
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ansA"
+            android:text="Ans A"
+            android:textColor="@color/Beige"
+            android:backgroundTint="@color/DarkOliveGreen"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ansB"
+            android:text="Ans B"
+            android:textColor="@color/Beige"
+            android:backgroundTint="@color/DarkOliveGreen"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ansC"
+            android:text="Ans C"
+            android:textColor="@color/Beige"
+            android:backgroundTint="@color/DarkOliveGreen"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ansD"
+            android:text="Ans D"
+            android:textColor="@color/Beige"
+            android:backgroundTint="@color/DarkOliveGreen"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_btn"
+        android:text="Submit"
+        android:textColor="@color/Beige"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/DarkOliveGreen"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

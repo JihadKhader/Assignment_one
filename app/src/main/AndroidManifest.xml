@@ -13,8 +13,23 @@
         android:theme="@style/Theme.Assignment_one"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity3"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="Birzeit Elementary School">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

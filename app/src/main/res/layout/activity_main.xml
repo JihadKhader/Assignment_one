@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/Beige"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
@@ -23,27 +23,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:dropDownHeight="200dp"
         android:background="@color/DarkOliveGreen"
-        android:minHeight="48dp"
+        android:contentDescription="@string/app_name"
+        android:dropDownHeight="200dp"
         android:dropDownVerticalOffset="40dp"
+        android:minHeight="48dp"
         android:spinnerMode="dropdown"
         android:translationY="-80dp" />
 
 
     <TextView
-        android:layout_margin="10dp"
         android:id="@+id/ChooseCourseText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:gravity="center"
         android:text="@string/main_screen_text"
         android:textColor="@color/DarkOliveGreen"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:translationY="-200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chosen_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/DarkOliveGreen"
+        android:text="@string/chosen_data_btn"
+        android:textColor="@color/Beige"
+        android:translationY="-50dp" />
 
 </LinearLayout>
