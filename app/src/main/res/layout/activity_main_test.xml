@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Beige"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/centerView" />
+
+    <!-- Add a view at the center of the RelativeLayout to serve as a reference -->
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="412dp"
+        android:layout_above="@+id/recyclerView"
+        android:layout_marginBottom="-46dp"
+        app:srcCompat="@drawable/blue_modern_school_academy_logo" />
+
+    <TextView
+        android:id="@+id/textViewMainTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerView"
+        android:layout_centerHorizontal="true"
+        android:text="Jihad"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

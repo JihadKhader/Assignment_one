@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageviewRecycler"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameRecycler"
+        android:layout_toEndOf="@id/imageviewRecycler"
+        android:textColor="@color/DarkOliveGreen"
+        android:textSize="20dp"
+        android:text="Math"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherRecycler"
+        android:layout_toEndOf="@id/imageviewRecycler"
+        android:layout_below="@id/nameRecycler"
+        android:textColor="@color/DarkOliveGreen"
+        android:text="Dr.Ahmad"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageviewRecycler"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"/>
+
+
+</RelativeLayout>
